@@ -31,7 +31,15 @@
     .container {
       display: grid;
       grid-gap: 20px;
-    }
+      grid-template-columns: 100px repeat(2 1fr auto)  200px repeat(2, 5fr);
+     
+      /* repeat(4, 1fr);  4 columns of 1 fr, or
+         repeat (4, 1fr 2fr);  8 columns of 1fr then 2fr then 1fr then 2fr and so on..
+         auto size the content repeat(4, 1fr auto);
+    * grid-tepmplate-columns: 100px repeat(2 1fr auto)  200px repeat(2, 5fr);
+    */
+
+        }
   </style>
 </body>
 
