@@ -18,7 +18,7 @@
     <div class="item">6</div>
     <div class="item">7</div>
     <div class="item">8</div>
-    <div class="item">9</div>
+    <div class="item">Afshan is cool</div>
     <div class="item">10</div>
     <div class="item">11</div>
     <div class="item">12</div>
@@ -31,7 +31,17 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      height: 600px;
+      border: 10px solid var(--yellow);
+      grid-template-columns: auto 1fr auto 1fr;
     }
+    /* grid-template-columns: 25% 25% 25% 25%; * Use  fractional fr unit instead of %. 
+    They are just improprtionate to how much free space is left.
+     border: 10px solid var(--yellow);
+     grid-template-columns: 200px 200px 1fr;
+     grid-template-columns: 200px 2fr 1fr; * 2fr is taking twice as space as both columns.
+    */
+
   </style>
 </body>
 
